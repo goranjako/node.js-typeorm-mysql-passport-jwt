@@ -30,12 +30,12 @@ try {
     );
 
     //Send the jwt in the response
-    res.status(200).send( {success: true,msg:'suseul register', token:token}); 
+    res.status(200).send( {success: true,msg:'You are successfully register', token:token}); 
    
     }
   }
   catch (err) {
-    return res.status(400).json({ success: false, msg: 'Costumer  Email already use' });
+    return res.status(400).json({ success: false, msg: 'User  Email already use' });
 }
   }
 
@@ -67,7 +67,7 @@ try {
     );
 
     //Send the jwt in the response
-    res.status(200).send( {success: true,msg:'suseul login', token:token}); 
+    res.status(200).send( {success: true,msg:'You are successfully logged in', token:token}); 
    
 }
 catch (error) {
