@@ -63,7 +63,7 @@ export const createUser = async ( req: Request,res: Response) => {
   }
 }
   catch (err) {
-    return res.status(400).json({ success: false, msg: 'Costumer  Email already use' });
+    return res.status(400).json({ success: false, msg: 'User  Email already use' });
 }
 
 };
@@ -92,7 +92,7 @@ export const deleteUser = async (req: Request, res: Response)=> {
   }});
     if(user) {
   const result =await getRepository(User).delete(user);
-  return res.json({msg: 'success delete user'});
+  return res.json({msg: 'Success delete user'});
     }
  else {
   return  res.status(400).json({success: false,msg: 'Not user found'});
