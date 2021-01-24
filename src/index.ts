@@ -1,11 +1,11 @@
-import * as express from 'express';
-import * as morgan from 'morgan';
-import * as cors from 'cors';
-import * as bodyParser from "body-parser";
+import  express from 'express';
+import  morgan from 'morgan';
+import  cors from 'cors';
+import  bodyParser from "body-parser";
 import "reflect-metadata";
 import passportManager from './middlewere/passport';
 import {createConnection, Connection} from 'typeorm';
-import* as  dotenv from 'dotenv';
+import  dotenv from 'dotenv';
 dotenv.config();
 import userRoutes from './routes/user.routes'
 import { connected } from 'process';
