@@ -1,7 +1,7 @@
 import { Request, Response } from "express";
 import { getRepository } from "typeorm";
 import { User } from "../entity/User";
-
+//getUsers
 export const getUsers = async (req: Request,res: Response)=> {
   const userRepository = getRepository(User);
   try{
@@ -19,7 +19,7 @@ export const getUsers = async (req: Request,res: Response)=> {
     
   }
 };
-
+//getUser
 export const getUser = async (
   req: Request,
   res: Response
@@ -45,7 +45,7 @@ catch (error) {
 }
  
 };
-
+//createUser
 export const createUser = async ( req: Request,res: Response) => {
   try {
     if (!req.body.fullName || !req.body.email) {
@@ -68,7 +68,7 @@ export const createUser = async ( req: Request,res: Response) => {
 
 };
 
-
+//updateUser
 export const updateUser = async ( req: Request,res: Response)=> {
   try{
   const user = await getRepository(User).findOneOrFail({where: {
@@ -84,7 +84,7 @@ export const updateUser = async ( req: Request,res: Response)=> {
   return res.json({msg: 'Not user found'});
   }
 };
-
+//deleteUser
 export const deleteUser = async (req: Request, res: Response)=> {
   try{
     const user = await getRepository(User).findOneOrFail({where: {
