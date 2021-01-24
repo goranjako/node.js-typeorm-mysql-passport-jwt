@@ -1,0 +1,21 @@
+{
+  "name": "node.js-typeorm-mysql-passport-jwt",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/goranjako/node.js-typeorm-mysql-passport-jwt.git"
+  },
+  "author": "Goran Jakovljević",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/goranjako/node.js-typeorm-mysql-passport-jwt/issues"
+  },
+  "homepage": "https://github.com/goranjako/node.js-typeorm-mysql-passport-jwt#readme"
+}
