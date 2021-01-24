@@ -41,7 +41,9 @@
     "typeorm": "^0.2.30"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "ts-node ./lib/server.ts",
+    "build": "rimraf dist && tsc  ",
+    "start": "node ./dist/index.js "
   },
   "repository": {
     "type": "git",
